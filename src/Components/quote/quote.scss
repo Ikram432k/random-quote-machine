@@ -1,0 +1,48 @@
+.q-maindiv{
+    width: 850px;
+    margin: 25px auto 25px auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+.q-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 20px;
+}
+.q-div p{
+    padding-bottom: 15px;
+}
+.q-p{
+    font-size: 30px;
+    font-style: italic;
+}
+.q-a{
+    font-size: 20px;
+}
+.q-btn{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.q-btn button{
+    border:0;
+    color:white;
+    margin-top:5px;
+    background-color:black;
+    padding:8px 10px;
+    font-size:25px;
+    transition: 0.5s;
+    border:0.5px solid black;
+    border-radius:50%;
+}
+.q-btn button:hover{
+    background-color:white;
+    color:black;
+}
