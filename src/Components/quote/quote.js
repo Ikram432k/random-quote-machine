@@ -18,7 +18,7 @@ const Quote =()=>{
     const getQuote =async()=>{
         try{
             const response = await fetch("https://api.quotable.io/random");
-            if (!response.ok) throw new Error();
+            if (!response.ok) throw new Error('sorry quote not available');
             const msg = await response.json();
             dispatch(set_author(msg.author));
             dispatch(set_quote(msg.content));
