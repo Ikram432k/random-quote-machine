@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { set_quote,set_author } from "../../Redux/actions/todaysQuote";
+import { set_quote,set_author,remove_oldquote } from "../../Redux/actions/todaysQuote";
 import './quote.scss'
 const Quote =()=>{
     const dispatch = useDispatch();
     const storeData = useSelector((state)=> state.allquotes);
     const { author,quote } = storeData;
     useEffect(()=>{
+        dispatch(remove_oldquote());
         getQuote();
     },[]);
     // const [data,setData] = useState({
