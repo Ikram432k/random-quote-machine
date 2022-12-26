@@ -13,3 +13,9 @@ export const set_author =(author)=> {
         payload: author
     };
 };
+
+export const remove_oldquote =()=> {
+    return{
+        type: ActionTypes.REMOVE_OLDQUOTE,
+    };
+};
